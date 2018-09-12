@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c4e4510d-ac50-4486-8bc5-4ed0eef3b5d5/resourceGroups/group1/providers/Microsoft.Web/sites/frontend-pprs-ucb",
+    "appService.deploySubpath": "dist\\frontend-pprs-ucb"
+}
