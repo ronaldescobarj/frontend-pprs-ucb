@@ -8,6 +8,8 @@ import { FormTwoViewComponent } from './form-two-view/form-two-view.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { FormThreeViewComponent } from './form-three-view/form-three-view.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormFourViewComponent } from './form-four-view/form-four-view.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { FormThreeViewComponent } from './form-three-view/form-three-view.compon
     FormOneViewComponent,
     FormTwoViewComponent,
     MainDashboardComponent,
-    FormThreeViewComponent
+    FormThreeViewComponent,
+    FormFourViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

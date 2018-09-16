@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormThreeViewComponent implements OnInit {
 
-  observations: string[]
+  observations: string[] = [];
+  score: number;
   constructor() { }
 
   ngOnInit() {

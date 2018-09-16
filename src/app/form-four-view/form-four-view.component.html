@@ -1,0 +1,126 @@
+<div>
+  <h1 style="text-align: center">TABLA DE CALIFICACIÓN DE LA MINICLASE</h1>
+</div>
+
+<div>
+  <h3>Nombre del proponente:</h3>
+  <input type="text" name="postulantName" required />
+  <h3>Denominación de la asignatura:</h3>
+  <input type="text" name="subjectName" required />
+  <h3>Tema expuesto:</h3>
+  <input type="text" name="topic" required />
+  <h3>Carrera a la que pertenece:</h3>
+  <input type="text" name="major" required />
+  <h3>Fecha:</h3>
+  <input type="date" name="date" required />
+</div>
+
+<div>
+  <p style="text-align: center">Se debe solicitar al docente que emule una clase tal como la realiza.</p>
+</div>
+
+<div>
+  <div>
+    <h4>1. La clase impartida por el docente demuestra planificación.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 1)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>2. El docente demuestra dominio en los contenidos de su asignatura.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 2)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>3. El docente realiza explicaciones claras.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 3)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>4. El uso de recursos didácticos (pizarra, material impreso, proyectora, otros) contribuye a la explicación y
+      comprensión.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 4)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>5. El docente recurre a diferentes estrategias de aprendizaje: mapas, conceptuales, estudio de casos,
+      resolución de problemas, guías de estudio, y otros.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 5)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>6. Al inicio del tema, el docente explora conocimientos, previos de los estudiantes.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 6)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>7. El docente vincula el tema con problemas y/o situaciones del quehacer profesional.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 7)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>8. El docente responde adecuadamente preguntas que formulan durante la clase.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 8)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>9. El docente crea un clima de aprendizaje favorable.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 9)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h4>10. En qué medida le gustaría tomar una materia con este docente.</h4>
+    <div>
+      <select (change)='qualify($event.target.value, 10)'>
+        <option class='option' *ngFor='let q of qualificationOptions' [value]="q.value">{{q.name}}</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div>
+    <h4>Comentarios u observaciones</h4>
+    <textarea name="observation0" [(ngModel)]="observation"></textarea>
+
+    <div>
+      <h4>Calificacion S/20</h4>
+      <label>{{totalScore}}</label>
+    </div>
+  </div>
+
+</div>

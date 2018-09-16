@@ -22,43 +22,42 @@
   <div>
     <h4>0. Motivaciones que lo han llevado a postular a la asignatura.</h4>
     <div>
-      <!-- <textarea [(ngModel)]="observations[0]" required></textarea>
-      <p>{{observations[0]}}</p> -->
+      <textarea name="observation0" [(ngModel)]="observations[0]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>1. Lo más destacable de su experiencia profesional relacionado con la asignatura a la que ha postulado.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation1" [(ngModel)]="observations[1]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>2. Aspectos instrumentales o conceptuales de la asignatura que más han evolucionado en los últimos años.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation2" [(ngModel)]="observations[2]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>3. Competencias que desarrollarán sus estudiantes al finalizar la carrera.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation3" [(ngModel)]="observations[3]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>4. Métodos de enseñanza que utilizará para desarrollar las competencias que señaló.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation4" [(ngModel)]="observations[4]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>5. Modalidades que utilizará para evaluar lo que los estudiantes hayan aprendido.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation5" [(ngModel)]="observations[5]"></textarea>
     </div>
   </div>
 
@@ -66,46 +65,58 @@
     <h4>6. Acciones que desarrollará para que la relación con los estudiantes se desenvuelva en un clima de
       cordialidad.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation6" [(ngModel)]="observations[6]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>7. Idoneidad, calidad humana y liderazgo (plantear un problema ético/profesional y pedir su criterio)</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation7" [(ngModel)]="observations[7]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>8. Gestión para la transversalización de la pastoral en aula.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation8" [(ngModel)]="observations[8]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>9. Identidad católica (grado de compromiso con los principios de la iglesia católica).</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation9" [(ngModel)]="observations[9]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>10. Contribución adicional a la UCB, al margen de la docencia.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation10" [(ngModel)]="observations[10]"></textarea>
     </div>
   </div>
 
   <div>
     <h4>11. Disposición para asistir a eventos de formación continua en temas inherentes a la función docente.</h4>
     <div>
-      <textarea required></textarea>
+      <textarea name="observation11" [(ngModel)]="observations[11]"></textarea>
     </div>
   </div>
 
   <div>
-    {{generalTotal}}
+    <h4>Otorgar una calificación sobre la base de lo siguiente</h4>
+    <ul>
+      <li>Menos de 10 = No apto</li>
+      <li>Entre 11 y 19 = Apto con repartos</li>
+      <li>Entre 20 y 26 = Apto para la función docente</li>
+      <li>Entre 27 y 30 = Apto y recomendable</li>
+    </ul>
+
+    <div>
+      <label>Calificacion S/30</label>
+      <input type="number" min="1" max="30" name="score" [(ngModel)]="score">
+    </div>
   </div>
+
 </div>
