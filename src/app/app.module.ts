@@ -7,6 +7,7 @@ import { FormOneViewComponent } from './form-one-view/form-one-view.component';
 import { FormTwoViewComponent } from './form-two-view/form-two-view.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { FormThreeViewComponent } from './form-three-view/form-three-view.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
     ConvocatoriesViewComponent,
     FormOneViewComponent,
     FormTwoViewComponent,
-    MainDashboardComponent
+    MainDashboardComponent,
+    FormThreeViewComponent
   ],
   imports: [
     BrowserModule,
